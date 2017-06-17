@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">GenesisProject</string>
+
+    <string name="no_network_connection_available">No network connection available!</string>
+
+    <string name="show_previous_results">Show previous results</string>
+
+    <string name="nothing_saved_in_cache_yet">Nothing saved in cache yet!</string>
+    <string name="cancel_request">Cancel Request</string>
+
+    <string name="no_request_to_cancel_yet">No request to cancel yet!</string>
+
+</resources>

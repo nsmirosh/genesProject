@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.SearchView
+        android:id="@+id/searchView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:id="@+id/show_prev_results_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="@string/show_previous_results"
+        android:layout_below="@id/searchView" />
+
+
+    <Button
+        android:layout_toEndOf="@id/show_prev_results_btn"
+        android:id="@+id/cancel_request_btn"
+        android:layout_below="@id/searchView"
+        android:text="@string/cancel_request"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/show_prev_results_btn"
+        />
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/result_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/progress_bar"
+        android:padding="16dp" />
+
+</RelativeLayout>
